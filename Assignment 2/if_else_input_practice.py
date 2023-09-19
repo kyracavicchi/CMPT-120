@@ -8,6 +8,15 @@
 
 
 #additional instructions: instead of setting our variable to 10, what if we asked the user for the variable and used that value in our comparisons?
-def main():
 
-main()
+var2 = input("enter a number ")
+var2 = int(var2)
+print(var2)
+if var2 > 12:
+    print(var2, "is greater than 12")
+elif var2 > 11:
+    print(var2, "is greater than 11")
+elif var2 == 10:
+    print(var2, "is equal to 10")
+else:
+    print(var2, "is less than 10")
