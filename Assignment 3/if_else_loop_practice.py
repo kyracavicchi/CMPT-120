@@ -10,7 +10,13 @@ elif the number is between 5-20: print ("between 5 and 20")
 else (the number is less than 5)
 '''
 
-def main():
-    
-    
-main()
+list = [8, 20, 42, 7, 3, 33, 17, 28]
+for i in list:
+    if i > 35:
+        print("greater than 35")
+    elif i >= 20 and i <= 35:
+        print("between 20-35")
+    elif i >= 5 and i <= 20:
+        print("between 5 and 20")
+    else:
+        print("the number is less than 5")
