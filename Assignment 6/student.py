@@ -1,4 +1,4 @@
-#oo scary
+# oo scary
 '''
 Instructions:
 We're now experts at classes, right?
@@ -24,15 +24,54 @@ create a function because this college is a wacky one- every day they generate a
 (disclosure: obviously there's a very small chance of your generated number matching the student id number. I just want to see that you're generating and comparing properly)
 '''
 
-class student:
-    
-    
-    
-    
-    
-    
+
+class Student:
+
+    def __init__(self, name, studentID, year, major, gpa):
+        self.name = name
+        self.studentID = studentID
+        self.year = year
+        self.major = major
+        self.gpa = gpa
+
+    def honorsProgram(self):
+        if self.gpa >= 3.5:
+            return True
+        else:
+            return False
+
+    import random
+    randomID = random.randrange(00000, 99999)
+    print(randomID)
+
+    def freeLunch(self, randomID=None):
+        if self.studentID == randomID:
+            return ("Winner! {} gets free lunch!".format(self.name))
+        else:
+            return ("Loser!")
+
+
 def main():
-    #create three students and check if they get free lunch and if they qualify for honors
-    
-    
+
+    # create three students and check if they get free lunch and if they qualify for honors
+
+    student1 = Student("Kyra", 29304, "j", "math", 3.6)
+    lunch = student1.freeLunch()
+    print(lunch)
+    honors = student1.honorsProgram()
+    print(honors)
+
+    student2 = Student("Steve", 14731, "sr", "physics", 4.0)
+    lunch = student2.freeLunch()
+    print(lunch)
+    honors = student2.honorsProgram()
+    print(honors)
+
+    student3 = Student("Sam", 90123, "f", "biology", 3.1)
+    lunch = student3.freeLunch()
+    print(lunch)
+    honors = student3.honorsProgram()
+    print(honors)
+
+
 main()
